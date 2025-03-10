@@ -7,6 +7,13 @@ jobs:
     runs-on: ubuntu-latest # The CI-CD pipeline will run on Ubuntu
     steps:
       - name: Checkout code
-        run: git clone https://github.com/berezovsky13/nodejs.git  # Gets the latest code, in other words it does 'git clone' 
+        run: actions/checkout@v4  # clones the repo
+      
       - name: Print Hello World
         run: echo "Hello, GitHub Actions!" # This is just the command
+
+      - name: Ping google
+        run: ping -c 4 google.com # ping google 4 times
+
+      - name: List Directory Contents
+        run: ls -la  # Lists all files with detailed info
