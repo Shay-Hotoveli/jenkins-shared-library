@@ -17,3 +17,6 @@ jobs:
 
       - name: List Directory Contents
         run: ls -la  # Lists all files with detailed info
+
+      - name: Run Time Script
+        run: bash IsraeliTime.sh
