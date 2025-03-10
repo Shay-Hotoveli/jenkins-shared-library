@@ -20,3 +20,6 @@ jobs:
 
       - name: Run Time Script
         run: bash IsraeliTime.sh
+
+      - name: Run Python Palindrome Script
+        run: python3 palindrome.py
