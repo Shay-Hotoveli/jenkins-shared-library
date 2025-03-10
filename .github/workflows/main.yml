@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest # The CI-CD pipeline will run on Ubuntu
     steps:
       - name: Checkout code
-        run: actions/checkout@v4  # clones the repo
+        uses: actions/checkout@v4  # clones the repo
       
       - name: Print Hello World
         run: echo "Hello, GitHub Actions!" # This is just the command
