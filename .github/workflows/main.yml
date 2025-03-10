@@ -13,7 +13,7 @@ jobs:
         run: echo "Hello, GitHub Actions!" # This is just the command
 
       - name: Ping google
-        run: ping -c 4 8.8.8.8 # ping google 4 times
+        run: curl -Is https://google.com | head -n 1 # ping google 4 times
 
       - name: List Directory Contents
         run: ls -la  # Lists all files with detailed info
